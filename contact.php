@@ -9,8 +9,8 @@ $message=$_POST['message'];
 
 $mailTo =" bezziane19@gmail.com ";
 $header = "From :".$mailFrom ;
-$text = "You have received en email from ".$name"."./n/n".$message;
-mail($mailTo,$subject,$text,$header);
-header("location: index.html");
+$text = "You have received en email from ".$name.".\n\n".$message;
+mail($mailTo,$subject,$text,$headers);
+header("location: index.html?mailsend");
 
 ?>
