@@ -12,5 +12,5 @@ $header = "From :".$mailFrom ;
 $text = "You have received en email from ".$name.".\n\n".$message;
 mail($mailTo,$subject,$text,$headers);
 header("location: index.html?mailsend");
-
+}
 ?>
