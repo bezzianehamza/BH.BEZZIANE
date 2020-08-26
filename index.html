@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Template css Files -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/skins/pink.css" type="text/css">
 
@@ -46,9 +47,9 @@
                 <ul class="nav">
                     <li><a href="#home" class="active"><i class=" fa fa-home">Home</i></a></li>
                     <li><a href="#about"><i class=" fa fa-user">About</i></a></li>
-                    <li><a href="#services"><i class=" fa fa-list">Services</i></a></li>
+                    <!-- <li><a href="#services"><i class=" fa fa-list">Services</i></a></li>-->
                     <li><a href="#portfolio"><i class=" fa fa-briefcase">Portfolio</i></a></li>
-                    <li><a href="#blog"><i class=" fa fa-envelope">Blog</i></a></li>
+                   <!-- <li><a href="#blog"><i class=" fa fa-envelope">Blog</i></a></li>-->
                     <li><a href="#contact"><i class=" fa fa-comments">Contact</i></a></li>
 
                 </ul>
@@ -328,7 +329,7 @@
 
             <!--about section end -->
             <!--serveice sectione -->
-            <section class="service section " id="services">
+            <section class="service section hidden " id="services">
                 <div class="container">
 
                     <div class="row">
@@ -615,7 +616,7 @@
 
 
 
-            <section class="blog section " id="blog">
+            <section class="blog section hidden" id="blog">
 
                 <div class="container">
 
@@ -743,24 +744,21 @@
                         </div>
 
 
-                        <!-- contact form item end-->
-
-
-                    </div>
-                    <!-- contact info end-->
-                    <div class="row">
-                        <form class="contact-form padd-15">
+                           <!-- contact form item end-->
+                        <div class="row">
+                  <form class="contact-form padd-15" method="post" action="contact.php">
 
                             <div class="row">
+
                                 <div class="form-item col-6 padd-15">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Name*" maxlength="40">
+                                        <input name="name" type="text" class="form-control" placeholder=" Full name*">
                                     </div>
                                 </div>
 
                                 <div class="form-item col-6 padd-15">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Emaile*" maxlength="40">
+                                        <input name="mail" type="text" class="form-control" placeholder="Your Emaile*">
                                     </div>
                                 </div>
 
@@ -769,7 +767,7 @@
                             <div class="row">
                                 <div class="form-item col-12 padd-15">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Subject*" maxlength="50">
+                                        <input name="subject" type="text" class="form-control" placeholder="Subject*">
                                     </div>
                                 </div>
                             </div>
@@ -778,7 +776,7 @@
                             <div class="row">
                                 <div class="form-item col-12 padd-15">
                                     <div class="form-group">
-                                        <textarea class="form-control" placeholder="Your Message . . . " maxlength="150"></textarea>
+                                        <textarea name="message" class="form-control" placeholder=" Message . . . "></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -786,11 +784,16 @@
 
                             <div class="row">
                                 <div class="col-12 padd-15">
-                                    <button type="submit" class="btn">Send message</button>
+                                    <button type="submit" class="btn" name="submit">SEND MAIL</button>
                                 </div>
                             </div>
 
                         </form>
+
+                    </div>
+                    <!-- contact info end-->
+                    <div class="row">
+                        
                     </div>
 
 
