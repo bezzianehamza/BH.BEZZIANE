@@ -9,7 +9,7 @@ $message=$_POST['message'];
 
 $mailTo =" bezziane19@gmail.com ";
 $header = "From :".$mailFrom ;
-$text = "You have received en E-mail from ".$name"./n/n".$message;
+$text = "You have received en email from ".$name"./n/n".$message;
 
 
 
